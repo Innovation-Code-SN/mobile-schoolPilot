@@ -35,7 +35,11 @@
     ],
     "extra": {
       "apiBaseUrl": "http://45.92.111.211:5053",
-      "appName": "SchoolPilot Mobile"
-    }
+      "appName": "SchoolPilot Mobile",
+      "eas": {
+        "projectId": "1e33d00b-fb4b-4be0-86f1-751ba50ce059"
+      }
+    },
+    "owner": "balla1301"
   }
 }
