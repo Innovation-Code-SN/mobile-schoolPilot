@@ -40,6 +40,12 @@
         "projectId": "1e33d00b-fb4b-4be0-86f1-751ba50ce059"
       }
     },
-    "owner": "balla1301"
+    "owner": "balla1301",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/1e33d00b-fb4b-4be0-86f1-751ba50ce059"
+    }
   }
 }
