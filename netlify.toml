@@ -5,7 +5,15 @@
 [build.environment]
   NODE_VERSION = "20.19.4"
 
-# SPA fallback: all routes serve index.html so client-side routing works
+# Proxy API calls to the backend (HTTPS -> HTTP) to bypass mixed content
+# Must come BEFORE the SPA fallback below
+[[redirects]]
+  from = "/api/*"
+  to = "http://45.92.111.211:5053/:splat"
+  status = 200
+  force = true
+
+# SPA fallback: all other routes serve index.html so client-side routing works
 [[redirects]]
   from = "/*"
   to = "/index.html"
